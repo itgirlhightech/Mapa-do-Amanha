@@ -16,12 +16,13 @@ form.addEventListener("submit", function (e) {
     })
     .then(response => response.json())
     .then(data => {
-        mensagem.textContent = "Mensagem enviada com sucesso! Obrigada pelo feedback";
-        mensagem.style.color = "#1c65b4";
-        mensagem.style.display = "block";
-        form.reset();
+        // Ao invés de só mostrar a mensagem, redireciona para a página de obrigado
+        window.location.href = "https://itgirlhightech.github.io/Mapa-do-Amanha/obrigada.html";
     })
     .catch(error => {
         console.error("Erro ao enviar:", error);
+        mensagem.textContent = "Erro ao enviar a mensagem. Tente novamente.";
+        mensagem.style.color = "red";
+        mensagem.style.display = "block";
     });
 });

@@ -54,25 +54,18 @@ header {
     z-index: 1000;
 }
 
-.banner-wrapper {
-    padding-inline: 1rem;
-    margin-top: 1rem;
-}
-
 
 .banner {
     position: relative;
     width: 100%;
     height: 250px;
     overflow: hidden;
-    margin: 1rem 1rem 0 1rem;
 }
 
 .banner img {
-    width: calc(100% - 2rem);
+   width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius: 27%;
 }
 
 .frase {
@@ -189,4 +182,80 @@ form button:hover {
     display: flex;
     flex-direction: column;
     gap: 0.7rem;
+}
+
+.enem-info {
+    padding: 1.5rem;
+    margin: 1rem;
+    background-color: #f3f8fd;
+    border-radius: 10px;
+    color: #072646;
+}
+
+.enem-info h2 {
+    text-align: center;
+    color: #1c65b4;
+    margin-bottom: 1rem;
+}
+
+.enem-bloco {
+    margin-bottom: 1.2rem;
+}
+
+.enem-bloco ul {
+    list-style-type: disc;
+    padding-left: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.enem-bloco p {
+    margin: 0.3rem 0;
+}
+
+.enem-topico {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 2rem;
+    margin: 1rem;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.enem-topico h3 {
+    color: #1c65b4;
+    margin-bottom: 0.5rem;
+}
+
+.enem-topico p, .enem-topico ul {
+    color: #333;
+    font-size: 0.95rem;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.link-avaliacao {
+  display: block;
+  font-size: 1.05rem;
+  color: #072646;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.link-avaliacao:hover {
+  color: #0d3f7c;
+  text-decoration: underline;
+}
+
+.sobre-descricao {
+    color:#072646;
+}
+
+.sobre {
+    background-color: #eef4fc;
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 10px;
+    font-size: 0.95rem;
 }

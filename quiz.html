@@ -12,7 +12,7 @@
     <span class="logo">Teste Vocacionais</span>
     <nav class="main-nav">
         <a href="index.html">Início</a>
-        <a href="#enem">Enem</a>
+        <a href="enem.html">Enem</a>
     </nav>
 </header>
 
@@ -26,28 +26,32 @@
         <a href="https://www2.uepa.br/vocacional/" target="_blank" class="quiz-botao">Fazer teste</a>
     </section>
 
-    <section class="avaliacao">
-        <h3>Avalie este projeto</h3>
-        <form action="https://formsubmit.co/evlynfeitosa@email.com" method="POST">
-          <label for="nota">Nota:</label>
-          <select id="nota" name="nota">
+   <section id="avaliacao" class="link-avaliacao">
+     <h3>Avalie este projeto</h3>
+      <form action="https://formsubmit.co/evlynfeitosa@gmail.com" method="POST">
+         <label for="nota">Nota:</label>
+         <select id="nota" name="nota" required>
+             <option value="">Selecione</option>
              <option value="1">1 - Ruim</option>
              <option value="2">2 - Regular</option>
              <option value="3">3 - Bom</option>
              <option value="4">4 - Muito bom</option>
              <option value="5">5 - Excelente</option>  
-          </select>
-             
-          <label for="comentario">Comentário:</label>
-          <textarea id="comentario" name="comentario" rows="4" placeholder="Digite aqui..."></textarea>
-          
-          <input type="hidden" name="_captcha" value="false">
-          <input type="hidden" name="_next" value="https://seudominio.com/obrigado.html">
+    </select>
 
-          <button type="submit">Enviar</button>
-        </form>
-    </section>
+    <label for="comentario">Comentário:</label>
+    <textarea id="comentario" name="comentario" rows="4" placeholder="Digite aqui..." required></textarea>
+
+    <button type="submit">Enviar</button>
+  </form>
+
+  <div id="mensagem-sucesso" style="display: none; margin-top: 1rem; color: green;">
+    Obrigado pela sua avaliação!
+  </div>
+</section>
+
 </main>
 
+<script src="script.js"></script>
 </body>
 </html>
